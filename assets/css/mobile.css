@@ -1,3 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+:root {
+    --bg-color: #272B33;
+    --header-color: #353B45;
+    --card-bg-color: #1C1F25;
+    --green: #55B99D;
+    --text-dark: #1C1F25;
+    --text-gray: #B5B5B5;
+    --text-white:#fff;
+    
+  }
+
+body{
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-white);
+=======
 *{
     margin: 0;
     padding: 0;
