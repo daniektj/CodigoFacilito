@@ -37,7 +37,6 @@ body{
     --text-dark: #1C1F25;
     --text-gray: #B5B5B5;
     --text-white:#fff;
-    
   }
 
 body{
@@ -45,3 +44,51 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--text-white);
 }
+
+header{
+    height: 68px;
+    background-color: var(--header-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* -------- HEADER -------- */
+
+.header__burgerNav{
+    width: 20px;
+    height: 12px;
+    background: url('../images/burger-nav.svg') no-repeat;
+    background-size: cover;
+}
+
+/* -------- PERSONAL NAVIGATION -------- */
+.personalNav{
+    height: 50px;
+    background-color: var(--green);
+    margin: 1.5rem 2rem;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.personalNav__item{
+    color: var(--text-dark);
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.personalNav__text{
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+/* -------- CURSOS DESTACADOS -------- */
