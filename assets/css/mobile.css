@@ -1,23 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
 
 :root {
-    --bg-color: #272B33;
-    --header-color: #353B45;
-    --card-bg-color: #1C1F25;
-    --green: #55B99D;
-    --text-dark: #1C1F25;
-    --text-gray: #B5B5B5;
-    --text-white:#fff;
-    
-  }
-
-body{
-    background-color: var(--bg-color);
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-white);
+  --bg-color: #272b33;
+  --header-color: #353b45;
+  --card-bg-color: #1c1f25;
+  --green: #55b99d;
+  --text-dark: #1c1f25;
+  --text-gray: #b5b5b5;
+  --text-white: #fff;
 }
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Roboto", sans-serif;
+  color: var(--text-white);
+}
+
+/* ---------Cursos destacados inicio ------------ */
+.cursosDestacados__card-container {
+  width: 356px;
+  height: 170px;
+  padding: 20px;
+  margin: 0 2rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: var(--card-bg-color);
+}
+
+.card__title-group {
+  display: flex;
+  margin: 0 0 10px;
+  align-items: center;
+}
+
+.title__group-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.card__text-description {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: var(--text-gray);
+}
+
+.card__title-teacher {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.card__teacher-name {
+  margin-left: 5px;
+  color: var(--green);
+}
+/* ---------Cursos destacados fin ------------ */
