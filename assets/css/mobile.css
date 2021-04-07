@@ -1,26 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
 
 :root {
-  --bg-color: #272b33;
-  --header-color: #353b45;
-  --card-bg-color: #1c1f25;
-  --green: #55b99d;
-  --text-dark: #1c1f25;
-  --text-gray: #b5b5b5;
-  --text-white: #fff;
+    --bg-color: #272B33;
+    --header-color: #353B45;
+    --card-bg-color: #1C1F25;
+    --green: #55B99D;
+    --text-dark: #1C1F25;
+    --text-gray: #B5B5B5;
+    --text-white:#fff;
+  }
+
+body{
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-white);
 }
 
-body {
-  background-color: var(--bg-color);
-  font-family: "Roboto", sans-serif;
-  color: var(--text-white);
+header{
+    height: 68px;
+    background-color: var(--header-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
 }
 
+/* -------- HEADER -------- */
+
+.header__burgerNav{
+    width: 20px;
+    height: 12px;
+    background: url('../images/burger-nav.svg') no-repeat;
+    background-size: cover;
+}
+
+/* -------- PERSONAL NAVIGATION -------- */
+.personalNav{
+    height: 50px;
+    background-color: var(--green);
+    margin: 1.5rem 2rem;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.personalNav__item{
+    color: var(--text-dark);
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.personalNav__text{
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+/* -------- CURSOS DESTACADOS -------- */
 /* ---------CSS a etiquetas ------------ */
 section h1 {
   font-size: 24px;
