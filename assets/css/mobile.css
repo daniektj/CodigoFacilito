@@ -21,12 +21,21 @@ body {
   color: var(--text-white);
 }
 
+/* ---------CSS a etiquetas ------------ */
+section h1 {
+  font-size: 24px;
+  color: var(--text-gray);
+}
+/* ---------CSS a etiquetas ------------ */
+
 /* ---------Cursos destacados inicio ------------ */
+.cursosDestacados__section {
+  margin: 1.5rem 2rem 0 2rem;
+}
 .cursosDestacados__card-container {
   width: 356px;
   height: 170px;
   padding: 20px;
-  margin: 0 2rem;
   border-radius: 10px;
   box-sizing: border-box;
   background-color: var(--card-bg-color);
@@ -60,3 +69,24 @@ body {
   color: var(--green);
 }
 /* ---------Cursos destacados fin ------------ */
+/* ---------Cursos Nuevos inicio ------------ */
+.cursosNuevos__section {
+  margin: 1.5rem 2rem 0 2rem;
+}
+
+.cursosNuevos__card-container {
+  width: 356px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: var(--card-bg-color);
+}
+
+.cursosNuevos__card-container img {
+  margin-right: 10px;
+}
+/* ---------Cursos Nuevos fin ------------ */
