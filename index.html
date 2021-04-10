@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Código Facilito</title>
     <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
   </head>
   <body>
     <header>
@@ -21,10 +23,12 @@
                 <img class="personalNav__image" src="assets/images/courses.svg" alt="icono reproducir">
                 <span class="personalNav__text">Mis Cursos</span>
             </a>
+            <div class="personalNav--lines"></div>
             <a class="personalNav__item" href="">
                 <img class="personalNav__image" src="assets/images/favs.svg" alt="icono reproducir">
                 <span class="personalNav__text">Mis Cursos</span>
             </a>
+            <div class="personalNav--lines"></div>
             <a class="personalNav__item" href="">
                 <img class="personalNav__image" src="assets/images/planes.svg" alt="icono reproducir">
                 <span class="personalNav__text">Mis Cursos</span>
@@ -32,52 +36,132 @@
             
         </div>
 
-      <section class="cursosDestacados__section">
-            <h1>Cursos Destacados</h1>
-        <div class="cursosDestacados__card-container">
-            <div class="card__title-group">
-              <img class="title__group-img" src="./logoJavaScript.svg"/>
-              <h2 class="title__group-text">
-                <strong>
-                    Curso profesional de JavaSript</h2>
-                </strong>
-              </h2>
-            
-            </div>
-            <p class="card__text-description"</p>
-              JavaScript es el lenguaje más popular en la actualidad, se utiliza para desarrollar
-              aplicaciones web completas, micro controladores...
-            </p>
-            <div class="card__title-teacher">
-              <img class="card__teacher-img" src="./Urielsito.png"/>
-              <p class="card__teacher-name">Uriel Hernandez</p>
-            </div>
+        <section class="destacados swiper-container">
+          <h2>Cursos Destacados</h2>
+          <!-- <div class="destacados__container swiper-wrapper"> -->
+          <div class="destacados__container swiper-wrapper">
+
+            <!-- -------- DESTACADOS CARD -------- -->
+            <div class="destacados__card swiper-slide">
+                  <div class="destacados__titleContainer">
+                    <img class="destacados__titleContainer--image" src="assets/images/logoJavaScript.svg"/>
+                    <h3 class="destacados__titleContainer--title">Curso profesional de JavaScript</h3>
+                  </div>
+                  <p class="destacados__description">
+                    JavaScript es el lenguaje más popular en la actualidad, se utiliza para desarrollar
+                    aplicaciones web completas, micro controladores...
+                  </p>
+                  <div class="destacados__author">
+                    <img class="destacados__author--image" src="assets/images/Urielsito.png"/>
+                    <p class="destacados__author--name">Uriel Hernandez</p>
+                  </div>
+              </div>
+            <!-- -------- DESTACADOS CARD -------- -->
+            <div class="destacados__card swiper-slide">
+                  <div class="destacados__titleContainer">
+                    <img class="destacados__titleContainer--image" src="assets/images/logoreact.svg"/>
+                    <h3 class="destacados__titleContainer--title">Curso de fundamentos de React</h3>
+                  </div>
+                  <p class="destacados__description">
+                    JavaScript es el lenguaje más popular en la actualidad, se utiliza para desarrollar
+                    aplicaciones web completas, micro controladores...
+                  </p>
+                  <div class="destacados__author">
+                    <img class="destacados__author--image" src="assets/images/Urielsito.png"/>
+                    <p class="destacados__author--name">Uriel Hernandez</p>
+                  </div>
+              </div>
+            <!-- -------- DESTACADOS CARD -------- -->
+            <div class="destacados__card swiper-slide">
+                  <div class="destacados__titleContainer">
+                    <img class="destacados__titleContainer--image" src="assets/images/logovue.svg"/>
+                    <h3 class="destacados__titleContainer--title">Taller de VUE con Firebase</h3>
+                  </div>
+                  <p class="destacados__description">
+                    JavaScript es el lenguaje más popular en la actualidad, se utiliza para desarrollar
+                    aplicaciones web completas, micro controladores...
+                  </p>
+                  <div class="destacados__author">
+                    <img class="destacados__author--image" src="assets/images/Urielsito.png"/>
+                    <p class="destacados__author--name">Uriel Hernandez</p>
+                  </div>
+              </div>
+              
+          </div>
+        </section>
+
+         <!-- -------- CURSOS NUEVOS -------- -->
+
+      <section class="cursosNuevos">
+       <h2>Cursos Nuevos</h2>
+
+        <div class="cursosNuevos__card">
+            <img src="assets/images/logoreact.svg">
+            <p>Curso para desarrollar Aplicaciones Web Progresivas</p>
+        </div>
+        <div class="cursosNuevos__card">
+            <img src="assets/images/logovue.svg">
+            <p>Taller de Vue con Firebase</p>
+        </div>
+        <div class="cursosNuevos__card">
+            <img src="assets/images/logoreact.svg">
+            <p>Curso para desarrollar Aplicaciones Web Progresivas</p>
+        </div>
+        <div class="cursosNuevos__card">
+            <img src="assets/images/logovue.svg">
+            <p>Taller de Vue con Firebase</p>
         </div>
       </section>
 
-      <section class="cursosNuevos__section">
-       <h1>Cursos Nuevos</h1>
-        <div class="cursosNuevos__card-container">
-            <img src="logoreact.svg">
-            <p>Curso para desarrollar Aplicaciones Web Progresivas</p>
-        </div>
-        <div class="cursosNuevos__card-container">
-            <img src="logovue.svg">
-            <p>Taller de Vue con Firebase</p>
-        </div>
-        <div class="cursosNuevos__card-container">
-            <img src="logoreact.svg">
-            <p>Curso para desarrollar Aplicaciones Web Progresivas</p>
-        </div>
-        <div class="cursosNuevos__card-container">
-            <img src="logovue.svg">
-            <p>Taller de Vue con Firebase</p>
-        </div>
-      </section>
+      <!-- -------- CLASES EN VIVO -------- -->
 
-      <section>en vivo</section>
+      <section class="enVivo">
+        <h2>Clases en Vivo</h2>
+        
+        <div class="enVivo__container swiper-wrapper">
+
+          <div class="enVivo__card swiper-slide">
+            <img src="assets/images/video01.jpg" alt="Uriel en stream">
+            <p>Resolviendo dudas de CSS en vivo</p>
+          </div>
+
+          <div class="enVivo__card swiper-slide">
+            <img src="assets/images/video02.jpg" alt="Uriel en stream">
+            <p>APIs con Python usando Fast API</p>
+          </div>
+          
+          <div class="enVivo__card swiper-slide">
+            <img src="assets/images/video03.jpg" alt="Uriel en stream">
+            <p>Monetización de apps móviles</p>
+          </div>
+
+          <div class="enVivo__card swiper-slide">
+            <img src="assets/images/video04.jpg" alt="Uriel en stream">
+            <p>Cómo hacer un pull request</p>
+          </div>
+
+          <div class="enVivo__card swiper-slide">
+            <img src="assets/images/video05.jpg" alt="Uriel en stream">
+            <p>Mi primera página con Tailwind</p>
+          </div>
+
+        </div>
+        <div class="box"></div>
+
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <img src="assets/images/codigofacilito-logo-gray.svg" alt="logotipo gris de código facilito">
+      <div class="footer__socialIcons">
+        <img src="assets/images/icon-facebook.svg" alt="icono de Facebook ">
+        <img src="assets/images/icon-youtube.svg" alt="icono de YouTube">
+        <img src="assets/images/icon-instagram.svg" alt="icono de Instagram">
+        <img src="assets/images/icon-twitter.svg" alt="icono de Twitter">
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
   </body>
 </html>

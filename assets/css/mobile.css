@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
     --bg-color: #272B33;
@@ -13,11 +13,12 @@
     --text-dark: #1C1F25;
     --text-gray: #B5B5B5;
     --text-white:#fff;
+    --font_default: 'Roboto', sans-serif;
   }
 
 body{
     background-color: var(--bg-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font_default);
     color: var(--text-white);
 }
 
@@ -51,15 +52,30 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+.personalNav--lines{
+  content: '';
+  width: 0px;
+  height: 35px;
+  border-right: 2px var(--text-dark) solid;
 }
 
 .personalNav__item{
     color: var(--text-dark);
     text-decoration: none;
+    cursor: pointer;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* border: 1px red solid; */
+}
+
+.personalNav__image{
+  width: 24px;
+  height: 24px;
+  /* border: 1px red solid; */
 }
 
 .personalNav__text{
@@ -69,60 +85,87 @@ header{
 
 /* -------- CURSOS DESTACADOS -------- */
 /* ---------CSS a etiquetas ------------ */
-section h1 {
-  font-size: 24px;
+h2{
+  font-size: 1.5rem;
   color: var(--text-gray);
+  margin-left: 2rem;
+  margin-bottom: .25rem;
 }
 /* ---------CSS a etiquetas ------------ */
 
+
+
 /* ---------Cursos destacados inicio ------------ */
-.cursosDestacados__section {
-  margin: 1.5rem 2rem 0 2rem;
+
+.destacados{
+  width: 100vw;
 }
-.cursosDestacados__card-container {
-  width: 356px;
+
+
+
+.destacados__container{
+  display: flex;
+  /* border: 2px purple solid; */
+}
+
+.destacados__card{
+  width: 85vw;
+  max-width: 85%;
   height: 170px;
+   
   padding: 20px;
-  border-radius: 10px;
   box-sizing: border-box;
+
+  border-radius: 10px;
   background-color: var(--card-bg-color);
 }
 
-.card__title-group {
+
+.destacados__titleContainer{
   display: flex;
   margin: 0 0 10px;
   align-items: center;
+  /* border: 1px yellow dashed; */
 }
 
-.title__group-text {
+.destacados__titleContainer--title {
   font-size: 16px;
   font-weight: bold;
   margin-left: 10px;
 }
 
-.card__text-description {
-  font-size: 14px;
+.destacados__description {
+  font-size: .875rem;
   margin-bottom: 15px;
   color: var(--text-gray);
 }
 
-.card__title-teacher {
+.destacados__author{
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.card__teacher-name {
+.destacados__author--name{
   margin-left: 5px;
   color: var(--green);
 }
 /* ---------Cursos destacados fin ------------ */
+
+
+
+
 /* ---------Cursos Nuevos inicio ------------ */
-.cursosNuevos__section {
-  margin: 1.5rem 2rem 0 2rem;
+.cursosNuevos{
+  width: 100%;
+  /* border: 2px purple dashed; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
-.cursosNuevos__card-container {
-  width: 356px;
+.cursosNuevos__card{
+  width: 85%;
   display: flex;
   align-items: center;
   height: 60px;
@@ -131,9 +174,80 @@ section h1 {
   border-radius: 10px;
   box-sizing: border-box;
   background-color: var(--card-bg-color);
+  /* border: 1px red solid; */
 }
 
-.cursosNuevos__card-container img {
+.cursosNuevos__card img{
   margin-right: 10px;
 }
-/* ---------Cursos Nuevos fin ------------ */
+
+.cursosNuevos h2{
+  margin-top: 1.5rem;
+  align-self: flex-start;
+}
+
+
+/* -------- CLASES EN VIVO -------- */
+.enVivo{
+  margin-top: 1.5rem;
+/*   display: flex;
+  flex-direction: column; */
+/*   border: 2px sandybrown dashed; */
+  margin-left: 1.5rem;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.enVivo h2{
+  margin-left: 0rem;
+}
+.enVivo__container{
+  /* display: flex; */
+}
+
+.enVivo__card{
+  width: 200px;
+  min-height: 180px;
+  background-color: var(--card-bg-color);
+  /* margin-right: 10px; */
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.enVivo__card img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.enVivo__card p{
+  margin: 5px 0 0 10px;
+  /* width: 175px; */
+  font-size: 0.875rem;
+  /* border: 1px rgb(82, 82, 82) dashed; */
+}
+
+.box{
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(270deg, #272B33 42%, rgba(39, 43, 51, 0.08) 100%);
+  /* border: 1px rgb(82, 82, 82) dashed; */
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* -------- FOOTER -------- */
+
+footer{
+  height: 75px;
+  background-color: var(--card-bg-color);
+  padding: 0 2rem;
+  margin-top: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
