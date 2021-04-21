@@ -351,6 +351,7 @@ footer{
   }
 
   .header__premium{
+    display: inline;
     margin-left: 20px;
   }
 
@@ -645,6 +646,23 @@ footer{
 
   .header__container{
     max-width: 1300px;
+  }
+
+  .header__profileImage{
+    display: inline;
+    border-radius: 50%;
+    border: 2px var(--card-bg-color) solid;
+    margin-right: 10px;
+  }
+
+  .header__profileName{
+    display: inline;
+    color: var(--text-white);
+    text-decoration: none;
+  }
+
+  .header__burgerNav{
+    display: none;
   }
 
   .personalNav{
