@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Código Facilito</title>
     <link rel="stylesheet" href="assets/css/mobile.css" />
+    <!-- <link rel="stylesheet" media="screen and (max-device-width: 1080px)" href="assets/css/desktop.css" /> -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
   </head>
   <body>
     <header>
-        <img class="header__logo" src="assets/images/codigofacilito-logo.svg" alt="logo">
-        <figure class="header__burgerNav"></figure>
+      <div class="header__container">
+        <div class="header__leftContainer">
+          <img class="header__logo" src="assets/images/codigofacilito-logo.svg" alt="logo">
+          <img class="header__premium" src="assets/images/premium-icon.svg" alt="logo de suscriptor premium">
+        </div>
+        <div class="header__rightContainer">
+          <input type="search" class="search" placeholder="Buscador de cursos" />
+          <img class="header__profileImage" src="assets/images/profile-image.jpg" alt="Imagen del perfil del usuario">
+          <a class="header__profileName" href="#">DaniekTj</a>
+          <figure class="header__burgerNav"></figure>
+        </div>
+      </div>
     </header>
 
-    <nav></nav>
+    <nav>
+      <ul>
+        <li>Movíl</li>
+        <li>Web</li>
+        <li>Videojuegos</li>
+        <li>Bases de datos</li>
+        <li>Fundamentos</li>
+        <li>Hardware</li>
+        <li>Devops</li>
+      </ul>
+    </nav>
 
     <main>
         <div class="personalNav">
@@ -26,12 +47,12 @@
             <div class="personalNav--lines"></div>
             <a class="personalNav__item" href="">
                 <img class="personalNav__image" src="assets/images/favs.svg" alt="icono reproducir">
-                <span class="personalNav__text">Mis Cursos</span>
+                <span class="personalNav__text">Favoritos</span>
             </a>
             <div class="personalNav--lines"></div>
             <a class="personalNav__item" href="">
-                <img class="personalNav__image" src="assets/images/planes.svg" alt="icono reproducir">
-                <span class="personalNav__text">Mis Cursos</span>
+                <img class="personalNav__image" src="assets/images/study-board.svg" alt="icono reproducir">
+                <span class="personalNav__text">Mis Planes <span id="text__study">de Estudio<span></span>
             </a>
             
         </div>
@@ -95,22 +116,25 @@
       <section class="cursosNuevos">
        <h2>Cursos Nuevos</h2>
 
-        <div class="cursosNuevos__card">
-            <img src="assets/images/logoreact.svg">
-            <p>Curso para desarrollar Aplicaciones Web Progresivas</p>
-        </div>
-        <div class="cursosNuevos__card">
-            <img src="assets/images/logovue.svg">
-            <p>Taller de Vue con Firebase</p>
-        </div>
-        <div class="cursosNuevos__card">
-            <img src="assets/images/logoreact.svg">
-            <p>Curso para desarrollar Aplicaciones Web Progresivas</p>
-        </div>
-        <div class="cursosNuevos__card">
-            <img src="assets/images/logovue.svg">
-            <p>Taller de Vue con Firebase</p>
-        </div>
+        <div class="cursosNuevos__container">
+          <div class="cursosNuevos__card">
+              <img src="assets/images/logoreact.svg">
+              <p>Curso para desarrollar Aplicaciones Web Progresivas</p>
+          </div>
+          <div class="cursosNuevos__card">
+              <img src="assets/images/logovue.svg">
+              <p>Taller de Vue con Firebase</p>
+          </div>
+          <div class="cursosNuevos__card">
+              <img src="assets/images/logoreact.svg">
+              <p>Curso para desarrollar Aplicaciones Web Progresivas</p>
+          </div>
+          <div class="cursosNuevos__card">
+              <img src="assets/images/logovue.svg">
+              <p>Taller de Vue con Firebase</p>
+          </div>
+      </div>
+
       </section>
 
       <!-- -------- CLASES EN VIVO -------- -->
@@ -145,6 +169,11 @@
             <p>Mi primera página con Tailwind</p>
           </div>
 
+          <div class="enVivo__card swiper-slide">
+            <img src="assets/images/video03.jpg" alt="Uriel en stream">
+            <p>Monetización de apps móviles</p>
+          </div>
+
         </div>
         <div class="box"></div>
 
@@ -152,16 +181,26 @@
     </main>
 
     <footer>
-      <img src="assets/images/codigofacilito-logo-gray.svg" alt="logotipo gris de código facilito">
-      <div class="footer__socialIcons">
-        <img src="assets/images/icon-facebook.svg" alt="icono de Facebook ">
-        <img src="assets/images/icon-youtube.svg" alt="icono de YouTube">
-        <img src="assets/images/icon-instagram.svg" alt="icono de Instagram">
-        <img src="assets/images/icon-twitter.svg" alt="icono de Twitter">
+      <div class="footer__container">
+        <img src="assets/images/codigofacilito-logo-gray.svg" alt="logotipo gris de código facilito">
+        <div class="footer__submenu">
+          <ul>
+            <li>Términos y Condiciones</li>
+            <li>Aviso de privacidad</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+        <div class="footer__socialIcons">
+          <img src="assets/images/icon-facebook.svg" alt="icono de Facebook ">
+          <img src="assets/images/icon-youtube.svg" alt="icono de YouTube">
+          <img src="assets/images/icon-instagram.svg" alt="icono de Instagram">
+          <img src="assets/images/icon-twitter.svg" alt="icono de Twitter">
+        </div>
       </div>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/app2.js"></script>
   </body>
 </html>

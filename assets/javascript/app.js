@@ -1,68 +1,84 @@
-/* var div = document.querySelector(".destacados__container"); */
-/* var nav = document.querySelector("nav"); */
+(function() {
 
-// sorting images
-/* function updateSort(el) {
-  var scrollWidth = el.scrollWidth;
-  var scrollLeft = el.scrollLeft;
-  var width = el.offsetWidth;
-  var items = el.children;
+    'use strict';
+  
+    const breakpoint = window.matchMedia( '(min-width: 500px)' );
+    const breakpoint_02 = window.matchMedia( '(max-width: 999px)' );
+  
+    // keep track of swiper instances to destroy later
+    let mySwiper;
+  
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+  
+    const enableSwiper = function() {
+  
+      mySwiper = new Swiper ('.swiper-container', {
+  
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        centeredSlides: true,
+        height: 170,
 
-  if (scrollLeft <= width) {
-    el.prepend(items[items.length - 1]);
-    el.scrollLeft = scrollLeft + width;
-  }
-  if (scrollWidth - scrollLeft <= width) {
-    el.append(items[0]);
-    el.scrollLeft = scrollLeft - width;
-  }
-}
+        breakpoints: {
 
-var lastscroll;
-div.addEventListener("scroll", function() {
-  var el = this;
+          400: {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            centeredSlides: true,
+            height: 170,
+            loop: true,
+          },
+      
+          750: {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            centeredSlides: false,
+            height: 170,
+            loop: true,
+          },
+        },
+  
+/*         //a11y: true,
+        grabCursor: true,
+  
+        // pagination
+        pagination: '.swiper-pagination',
+        paginationClickable: true, */
+  
+      });
+    };
 
-  if (lastscroll) {
-    clearTimeout(lastscroll);
-  }
-  lastscroll = setTimeout(function() {
-    updateSort(el);
-  }, 50);
-  setActive(el);
-});
-
- */
-
-
-
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-    centeredSlides: true,
-    loop: true
-/*     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    }, */
-/*     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }, */
-  });
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
 
 
-  var swiper = new Swiper('.enVivo', {
-    slidesPerView: 2,
-    /* width: 200, */
-    spaceBetween: 10,
-   /*  centeredSlides: true, */
-    loop: true,
-/*     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    }, */
-/*     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }, */
-  });
+    breakpoint_02.addEventListener( "change", (e) => {
+      if (e.matches) {
+      /* the viewport is 600 pixels wide or less */
+        enableSwiper();
+        console.log('YA PRENDIO - This is a narrow screen — less than 600px wide.')
+      }else {
+      /* the viewport is more than than 600 pixels wide */
+        if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+        console.log('APAGADO - This is a wide screen — more than 600px wide. ')
+      }
+    });
+
+
+    document.addEventListener( "DOMContentLoaded", () => {
+
+      if (window.matchMedia("(min-width: 998px)").matches) {
+        /* La pantalla tiene al menos 400 píxeles de ancho */
+        console.log('nel');
+      } else {
+        enableSwiper();
+        console.log('TA PRENDIDA LA WEA');
+      }
+      
+    });
+  
+})();
