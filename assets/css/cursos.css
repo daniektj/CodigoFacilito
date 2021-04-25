@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --bg-color: #272b33;
+  --nav-color: #434b59;
+  --header-color: #353b45;
+  --card-bg-color: #1c1f25;
+  --card-bg-dark: #15171c;
+  --green: #55b99d;
+  --text-dark: #1c1f25;
+  --text-gray: #5b6472;
+  --text-white: #fff;
+  --font_default: "Roboto", sans-serif;
+}
+
+body {
+  min-height: calc(100vh - 0px);
+  background-color: var(--bg-color);
+  font-family: var(--font_default);
+  color: var(--text-white);
+  /* border-bottom: 1px red solid; */
+}
+
+header {
+  height: 68px;
+  background-color: var(--header-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+/* -------- HEADER -------- */
+
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__burgerNav {
+  width: 20px;
+  height: 12px;
+  background: url("../images/burger-nav.svg") no-repeat;
+  background-size: cover;
+}
+
+.header__premium {
+  display: none;
+}
+
+.header__profileImage {
+  display: none;
+}
+.header__profileName {
+  display: none;
+}
+
+.search {
+  display: none;
+}
+
+/* -------- TABLET DESIGN -------- */
+/* -------- TABLET DESIGN -------- */
+/* -------- TABLET DESIGN -------- */
+/* -------- TABLET DESIGN -------- */
+
+@media (min-width: 780px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    height: 60px;
+    justify-content: center;
+  }
+
+  .header__container {
+    width: 100%;
+    max-width: 760px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px purple dashed; */
+  }
+
+  main {
+    /* border: 1px red solid; */
+    flex-grow: 1;
+  }
+
+  .header__burgerNav {
+    /* display: none; */
+  }
+
+  .header__premium {
+    display: inline;
+    margin-left: 20px;
+  }
+
+  .header__rightContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__profileImage {
+    display: none;
+  }
+
+  .header__profileName {
+    display: none;
+  }
+
+  .header__profileName:hover {
+    text-decoration: underline;
+  }
+
+  .search {
+    display: inline;
+    width: 12.5rem;
+    background: var(--bg-color) url("../images/search-icon.svg") no-repeat;
+    background-position: 5% center;
+    padding: 0.875rem;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    color: var(--text-gray);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding-left: 40px;
+    margin-right: 2rem;
+  }
+
+  .search::placeholder {
+    color: var(--nav-color);
+  }
+}
+/* -------- DESKTOP DESIGN -------- */
+/* -------- DESKTOP DESIGN -------- */
+/* -------- DESKTOP DESIGN -------- */
+/* -------- DESKTOP DESIGN -------- */
+
+@media (min-width: 1000px) {
+  main {
+    display: flex;
+  }
+  .header__container {
+    max-width: 1300px;
+  }
+
+  .header__profileImage {
+    display: inline;
+    border-radius: 50%;
+    border: 2px var(--card-bg-color) solid;
+    margin-right: 10px;
+  }
+
+  .header__profileName {
+    display: inline;
+    color: var(--text-white);
+    text-decoration: none;
+  }
+
+  .header__burgerNav {
+    display: none;
+  }
+  .cursos__video--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cursos__contenido-container {
+    background: var(--text-dark);
+    width: 50%;
+    max-width: 312px;
+    position: relative;
+  }
+  .cursos__contenido-hide {
+    display: none;
+    transition: 0.5s;
+  }
+  .button__show {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  .cursos__contenido-container img {
+    position: absolute;
+    left: -32px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .curso__video {
+    height: 100%;
+  }
+  .curso__video--description {
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .videoDescription {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cursos__description--card {
+    display: flex;
+    height: 86%;
+    width: 97%;
+    border-radius: 10px;
+    padding: 5px;
+    /* margin: 10px; */
+    box-sizing: content-box;
+    background: var(--card-bg-dark);
+  }
+  .infoDescriptionCard {
+    height: 70%;
+  }
+  .card__video--description {
+    padding: 40px;
+  }
+  .infoDescriptionContainer {
+    padding: 10px 40px;
+  }
+  .video__description--header {
+    display: flex;
+    align-items: center;
+  }
+  .video__description--header h3 {
+    margin-left: 5px;
+  }
+  .video__description--info {
+    margin-top: 10px;
+    width: 93%;
+    color: var(--text-gray);
+  }
+  .infoDescriptionParrafo {
+    width: 100%;
+  }
+  .video__recursos {
+    width: 340px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 263px;
+    margin: 10px;
+    border-radius: 5px;
+    background: var(--text-dark);
+  }
+
+  .recursos {
+    display: none;
+  }
+
+  .video__recursos button {
+    height: 50px;
+    width: 80%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background: var(--green);
+  }
+
+  .video__recurso-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video__recurso-info h4 {
+    color: var(--text-gray);
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}
