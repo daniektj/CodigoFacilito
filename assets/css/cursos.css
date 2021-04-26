@@ -87,6 +87,8 @@ header {
   display: none;
 }
 
+
+
 /* -------- TABLET DESIGN -------- */
 /* -------- TABLET DESIGN -------- */
 /* -------- TABLET DESIGN -------- */
@@ -105,7 +107,7 @@ header {
 
   .header__container {
     width: 100%;
-    max-width: 760px;
+    /* max-width: 760px; */
     display: flex;
     justify-content: space-between;
     /* border: 1px purple dashed; */
@@ -161,6 +163,36 @@ header {
   .search::placeholder {
     color: var(--nav-color);
   }
+
+
+
+
+
+  
+  .cursos__video--container {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 2px red dashed; */
+  }
+
+  .curso__video {
+    height: 100%;
+    min-width: 400px;
+    /* border: 1px red solid; */
+  }
+
+  .curso__video iframe{
+    min-height: 400px;
+    /* border: 2px lime solid; */
+  }
+
+
+
+
+
 }
 /* -------- DESKTOP DESIGN -------- */
 /* -------- DESKTOP DESIGN -------- */
@@ -221,7 +253,15 @@ header {
 
   .curso__video {
     height: 100%;
+    min-width: 400px;
+    /* aspect-ratio: 16 / 9; */
   }
+
+ /*  .curso__video iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  } */
+
   .curso__video--description {
     height: 540px;
     display: flex;
