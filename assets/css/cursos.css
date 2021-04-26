@@ -172,7 +172,7 @@ header {
     display: flex;
   }
   .header__container {
-    max-width: 1300px;
+    max-width: 100%;
   }
 
   .header__profileImage {
