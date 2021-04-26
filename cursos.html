@@ -55,16 +55,35 @@
                     </p>
               
                 </div>
+
+                
                 <div class="video__recursos" id='recursos'>
                   <button>Recursos</button>
-                  <div class="video__recurso-info ">
-                    <h4>Tu progreso - 26 de 107</h4>
-                    <img src="./assets/images/progreso.svg"/>
-                  </div>
-                  <div class="video__recurso-info ">
-                      <h4>Califica este curso</h4>
-                      <img src="./assets/images/valorar.svg"/>
+
+                  <span class="rating__title">Califica este curso</span>
+                  <div class="container" id='container'>
+                    <div class="rating-count">
+                        <input id="c1" type="radio" name="rating" value="1" required>
+                        <label for="c1" id="sad1">1</label>
+                        <input id="c2" type="radio" name="rating" value="2">
+                        <label for="c2" id="sad2">2</label>
+                        <input id="c3" type="radio" name="rating" value="3">
+                        <label for="c3" id="neutral3">3</label>
+                        <input id="c4" type="radio" name="rating" value="4">
+                        <label for="c4" id="happy4">4</label>
+                        <input id="c5" type="radio" name="rating" value="5">
+                        <label for="c5" id="happy5">5</label>
                     </div>
+                    <img class="cody" id="happy" src="assets/images/cody-happy.svg" alt="">
+                    <img class="cody" id="pokerFace" src="assets/images/cody-pokerface.svg" alt="">
+                    <img class="cody" id="sad" src="assets/images/cody-sad.svg" alt="">
+                </div>
+
+                <div class="video__recurso-info ">
+                  <h4>Tu progreso - 26 de 107</h4>
+                  <img src="./assets/images/progreso.svg"/>
+                </div>
+
                 </div>
             </div>
           </div>
@@ -294,5 +313,6 @@
       </div>
     </main>
     <script src="assets/javascript/cursos.js"></script>
+    <script src="assets/javascript/rating.js"></script>
   </body>
 </html>

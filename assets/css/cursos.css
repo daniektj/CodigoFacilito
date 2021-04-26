@@ -18,12 +18,32 @@
   --font_default: "Roboto", sans-serif;
 }
 
+
+/* ---------- SCROLLBAR ---------- */
+
+.moduls__container::-webkit-scrollbar {
+  width: 14px;               /* width of the entire scrollbar */
+}
+
+.moduls__container::-webkit-scrollbar-track {
+  background: var(--card-bg-dark);        /* color of the tracking area */
+}
+
+.moduls__container::-webkit-scrollbar-thumb {
+  background-color: var(--header-color);    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--card-bg-dark);  /* creates padding around scroll thumb */
+}
+
+/* ---------- BODY ---------- */
+
 body {
   min-height: calc(100vh - 0px);
   background-color: var(--bg-color);
   font-family: var(--font_default);
   color: var(--text-white);
   /* border-bottom: 1px red solid; */
+  overflow: hidden;
 }
 
 header {
@@ -191,6 +211,7 @@ header {
     right: 0;
     cursor: pointer;
   }
+
   .img__hide {
     position: absolute;
     left: -32px;
@@ -249,17 +270,114 @@ header {
   .infoDescriptionParrafo {
     width: 100%;
   }
+
+  
   .video__recursos {
-    width: 340px;
-    flex-direction: column;
+    min-width: 240px;
+    /* max-width: 340px; */
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     height: 263px;
     margin: 10px;
     border-radius: 5px;
     background: var(--text-dark);
+    /* border: 1px purple dashed; */
+    z-index: 999;
   }
+
+/* ----------- RATING ----------- */
+
+  .container{
+    width: 185px;
+    height: 36px;
+    background: #15171C;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -20px;
+}
+
+.rating__title{
+  color: var(--text-gray);
+  font-size: .875rem;
+  z-index: -2;
+}
+
+.cody{
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    z-index: -1;
+}
+
+#happy{
+    display: none;
+}
+#pokerFace{
+    display: none;
+}
+#sad{
+    display: none;
+}
+
+.rating-count {
+    display: flex;
+    background: #15171C;
+    border-radius: 5px;
+  }
+  
+  .rating-count input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  
+  .rating-count input + label {
+    font-size: 0;
+    display: block;
+    width: 22px;
+    height: 21px;
+    cursor: pointer;
+    background: url(../images/star-green.svg) no-repeat center / contain;
+  }
+  
+  .rating-count label:hover ~ label,
+  .rating-count:not(:hover) input:checked + label ~ label,
+  .rating-count:not(:hover) input:invalid + label { background:url(../images/star-empty.svg) no-repeat center / contain;
+  }
+  
+  .rating-count input + label:hover,
+  .rating-count:not(:hover) input:focus + label {
+    background-image:url(../images/star-green.svg);
+  }
+
+
+
+
+  @keyframes celebration {
+    0%,
+    100% {
+            transform: translateY(0%);
+            transform-origin: 50% 50%;
+    }
+    15% {transform: translateY(-20px) rotate(20deg);}
+    30% {transform: translateY(15px) rotate(6deg);}
+    45% {transform: translateY(-15px) rotate(-3.6deg);}
+    60% {transform: translateY(9px) rotate(2.4deg);}
+    75% {transform: translateY(-6px) rotate(-1.2deg);}
+  }
+
+
+/* ----------- RATING ----------- */
 
   .recursos {
     display: none;
@@ -288,9 +406,15 @@ header {
 
   .moduls__container {
     width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow: auto;
+   /*  position: absolute ;
+			right: 0px ;
+			top: 0px ; */
+
   }
   .moduls__container--li {
     width: 100%;
