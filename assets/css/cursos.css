@@ -197,7 +197,6 @@ header {
     height: calc(100vh - 60px);
     display: flex;
     border: 2px orange dashed;
-
   }
   .header__container {
     max-width: 100%;
@@ -456,6 +455,25 @@ header {
     font-size: 14px;
   }
 
+  .sidebar__menu {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+  }
+  .sidebar__menu button {
+    background: none;
+    color: var(--text-white);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .sidebar__menu button:focus {
+    color: var(--green);
+    text-decoration: underline;
+    outline: none;
+}
+  }
+
   .moduls__container {
     height: 100vh;
     display: flex;
@@ -554,13 +572,13 @@ header {
     background-size: cover;
   }
 
-  .custom-radio-checkbox__text{
+  .custom-radio-checkbox__text {
     max-width: 90%;
-    /* word-wrap: break-word */;
+    /* word-wrap: break-word */
     border: 1px purple dashed;
   }
 
-  .custom-radio-checkbox__text p{
+  .custom-radio-checkbox__text p {
     word-wrap: break-word;
   }
 
