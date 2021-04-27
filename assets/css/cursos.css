@@ -522,7 +522,7 @@ header {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    font-family: arial;
+    /* border: 1px red solid; */
   }
 
   /* Modificador para dar la imagen de checkbox */
@@ -541,7 +541,18 @@ header {
     width: 15px;
     height: 15px;
     margin-right: 0.5rem;
+    background-position: center;
     background-size: cover;
+  }
+
+  .custom-radio-checkbox__text{
+    max-width: 90%;
+    /* word-wrap: break-word */;
+    border: 1px purple dashed;
+  }
+
+  .custom-radio-checkbox__text p{
+    word-wrap: break-word;
   }
 
   /* Cambia el checkbox personalizado cuando es pulsado */
