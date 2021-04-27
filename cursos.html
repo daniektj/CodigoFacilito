@@ -96,11 +96,11 @@
         <img class='img__hide' src='./assets/images/button_hide.svg' id="buttonHide" />
 
         <div class='sidebar__menu'>
-          <button>Modulos</button>
-          <button>Comentatios</button>
+          <button id='btnModulo' onfocus="handleModulo()">Modulos</button>
+          <button id='btnComentarios' onfocus="handleComentario()">Comentatios</button>
         </div>
 
-          <div class="moduls__container">
+          <div class="moduls__container" id='cursoModulos'>
             
             <details class="moduls__container--li">
             <summary>
@@ -1074,6 +1074,7 @@
               </details>
           
           </div>
+          <div class="cursos__comentarios" id='cursoComentarios'>HOLA MUNDO AQUI VAN LOS COMENTARIOS</div>
       </div>
     </main>
     <script src="assets/javascript/cursos.js"></script>

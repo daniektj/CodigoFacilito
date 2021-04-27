@@ -471,7 +471,6 @@ header {
     color: var(--green);
     text-decoration: underline;
     outline: none;
-}
   }
 
   .moduls__container {
@@ -483,6 +482,16 @@ header {
     /*  position: absolute ;
 			right: 0px ;
 			top: 0px ; */
+  }
+
+  .cursos__Modulos-hide {
+    display: none;
+  }
+  .cursos__comentarios-hide {
+    display: none;
+  }
+  .cursos__comentarios {
+    display: block;
   }
   .moduls__container--li {
     outline: none;
