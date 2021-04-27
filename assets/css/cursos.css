@@ -132,6 +132,12 @@ header {
     align-items: center;
   }
 
+  .header__leftContainer a{
+    color: transparent;
+    background: transparent;
+    text-decoration: none;
+  }
+
   .header__profileImage {
     display: none;
   }
