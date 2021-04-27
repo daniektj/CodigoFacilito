@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cursos</title>
+    <link rel="stylesheet" href="assets/css/cursos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__leftContainer">
+          <a href="index.html">
+            <img class="header__logo" src="assets/images/codigofacilito-logo.svg" alt="logo" />
+          </a>
+          <img
+            class="header__premium"
+            src="assets/images/premium-icon.svg"
+            alt="logo de suscriptor premium"
+          />
+        </div>
+        <div class="header__rightContainer">
+          <img
+            class="header__profileImage"
+            src="./assets/images/profile-image2.png"
+            alt="Imagen del perfil del usuario"
+          />
+          <a class="header__profileName" href="#">Mariwrios</a>
+          <figure class="header__burgerNav"></figure>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="cursos__video--container">
+        <div class="curso__video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/dAQENEPAqsc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="curso__video--description"id='videoDescription'>
+          <div class="cursos__description--card" id='infoDescriptionCard'>
+              <div class="card__video--description" id='infoDescriptionContainer'>
+                <div class="video__description--header">
+
+                  <img class="video__description--image" src="assets/images/logoJavaScript.svg"/>
+                  <h3 class="video__description--title">APIs con Python usando Fast API</h3>
+                </div>
+                    <p class="video__description--info" id='infoDescriptionParrafo'>
+                        Un desarrollador backend es multidisciplinario, sabe sobre Http, Bases de Datos, Administración de servidores, herramientas, ORM's, frameworks web,...
+                    </p>
+              
+                </div>
+
+                
+                <div class="video__recursos" id='recursos'>
+                  <button>Recursos</button>
+
+                  <span class="rating__title">Califica este curso</span>
+                  <div class="container" id='container'>
+                    <div class="rating-count">
+                        <input id="c1" type="radio" name="rating" value="1" required>
+                        <label for="c1" id="sad1">1</label>
+                        <input id="c2" type="radio" name="rating" value="2">
+                        <label for="c2" id="sad2">2</label>
+                        <input id="c3" type="radio" name="rating" value="3">
+                        <label for="c3" id="neutral3">3</label>
+                        <input id="c4" type="radio" name="rating" value="4">
+                        <label for="c4" id="happy4">4</label>
+                        <input id="c5" type="radio" name="rating" value="5">
+                        <label for="c5" id="happy5">5</label>
+                    </div>
+                    <img class="cody" id="happy" src="assets/images/cody-happy.svg" alt="">
+                    <img class="cody" id="pokerFace" src="assets/images/cody-pokerface.svg" alt="">
+                    <img class="cody" id="sad" src="assets/images/cody-sad.svg" alt="">
+                </div>
+
+                <div class="video__recurso-info ">
+                  <h4>Tu progreso - 26 de 107</h4>
+                  <img src="./assets/images/progreso.svg"/>
+                </div>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src='./assets/images/button_hide.svg' class='button__show' id="buttonShow" />
+      <div class="cursos__contenido-container " id='cursoContenido'>
+        <img class='img__hide' src='./assets/images/button_hide.svg' id="buttonHide" />
+
+          <div class="moduls__container">
+            
+            <details class="moduls__container--li">
+            <summary>
+             <div class='modul__containter-info'>
+                <div>
+                    <p>Sección 1: Introducción</p> <img class='modul__container--img'src='./assets/images/arrow.png'/>
+                </div> 
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+              <ul class='video__group'>
+                  <li>
+                    <div>
+                      <input type="checkbox">
+                      <p>1. Sección 2: JSX y React.DOM</p>
+                    </div>
+                    <div>
+                      <img src='./assets//images/play.svg'/> <p>10 min</p>
+                    </div>
+                    <img src='./assets/images/line.svg'>
+                </li>
+                <li>
+                    <div>
+                      <input type="checkbox">
+                      <p>1. Sección 2: JSX y React.DOM</p>
+                    </div>
+                    <div>
+                      <img src='./assets//images/play.svg'/> <p>10 min</p>
+                    </div>
+                    <img src='./assets/images/line.svg'>
+                </li>
+                <li>
+                    <div>
+                      <input type="checkbox">
+                      <p>1. Sección 2: JSX y React.DOM</p>
+                    </div>
+                    <div>
+                      <img src='./assets//images/play.svg'/> <p>10 min</p>
+                    </div>
+                    <img src='./assets/images/line.svg'>
+                </li>
+              </ul>
+            </details>
+            <details class="moduls__container--li">
+                <summary>
+                 <div class='modul__containter-info'>
+                    <div>
+                        <p>Sección 1: Introducción</p> <img class='modul__container--img'src='./assets/images/arrow.png'/>
+                    </div> 
+                    <p>5 / 5h 49 min</p>
+                  </div>
+                </summary>
+                  <ul class='video__group'>
+                      <li>
+                        <div>
+                          <input type="checkbox">
+                          <p>1. Sección 2: JSX y React.DOM</p>
+                        </div>
+                        <div>
+                          <img src='./assets//images/play.svg'/> <p>10 min</p>
+                        </div>
+                        <img src='./assets/images/line.svg'>
+                    </li>
+                    <li>
+                        <div>
+                          <input type="checkbox">
+                          <p>1. Sección 2: JSX y React.DOM</p>
+                        </div>
+                        <div>
+                          <img src='./assets//images/play.svg'/> <p>10 min</p>
+                        </div>
+                        <img src='./assets/images/line.svg'>
+                    </li>
+                    <li>
+                        <div>
+                          <input type="checkbox">
+                          <p>1. Sección 2: JSX y React.DOM</p>
+                        </div>
+                        <div>
+                          <img src='./assets//images/play.svg'/> <p>10 min</p>
+                        </div>
+                        <img src='./assets/images/line.svg'>
+                    </li>
+                  </ul>
+                </details>
+
+
+                <details class="moduls__container--li">
+                    <summary>
+                     <div class='modul__containter-info'>
+                        <div>
+                            <p>Sección 1: Introducción</p> <img class='modul__container--img'src='./assets/images/arrow.png'/>
+                        </div> 
+                        <p>5 / 5h 49 min</p>
+                      </div>
+                    </summary>
+                      <ul class='video__group'>
+                          <li>
+                            <div>
+                              <input type="checkbox">
+                              <p>1. Sección 2: JSX y React.DOM</p>
+                            </div>
+                            <div>
+                              <img src='./assets//images/play.svg'/> <p>10 min</p>
+                            </div>
+                            <img src='./assets/images/line.svg'>
+                        </li>
+                        <li>
+                            <div>
+                              <input type="checkbox">
+                              <p>1. Sección 2: JSX y React.DOM</p>
+                            </div>
+                            <div>
+                              <img src='./assets//images/play.svg'/> <p>10 min</p>
+                            </div>
+                            <img src='./assets/images/line.svg'>
+                        </li>
+                        <li>
+                            <div>
+                              <input type="checkbox">
+                              <p>1. Sección 2: JSX y React.DOM</p>
+                            </div>
+                            <div>
+                              <img src='./assets//images/play.svg'/> <p>10 min</p>
+                            </div>
+                            <img src='./assets/images/line.svg'>
+                        </li>
+                      </ul>
+                    </details>
+
+                    <details class="moduls__container--li">
+                        <summary>
+                         <div class='modul__containter-info'>
+                            <div>
+                                <p>Sección 1: Introducción</p> <img class='modul__container--img'src='./assets/images/arrow.png'/>
+                            </div> 
+                            <p>5 / 5h 49 min</p>
+                          </div>
+                        </summary>
+                          <ul class='video__group'>
+                              <li>
+                                <div>
+                                  <input type="checkbox">
+                                  <p>1. Sección 2: JSX y React.DOM</p>
+                                </div>
+                                <div>
+                                  <img src='./assets//images/play.svg'/> <p>10 min</p>
+                                </div>
+                                <img src='./assets/images/line.svg'>
+                            </li>
+                            <li>
+                                <div>
+                                  <input type="checkbox">
+                                  <p>1. Sección 2: JSX y React.DOM</p>
+                                </div>
+                                <div>
+                                  <img src='./assets//images/play.svg'/> <p>10 min</p>
+                                </div>
+                                <img src='./assets/images/line.svg'>
+                            </li>
+                            <li>
+                                <div>
+                                  <input type="checkbox">
+                                  <p>1. Sección 2: JSX y React.DOM</p>
+                                </div>
+                                <div>
+                                  <img src='./assets//images/play.svg'/> <p>10 min</p>
+                                </div>
+                                <img src='./assets/images/line.svg'>
+                            </li>
+                          </ul>
+                        </details>
+                        <details class="moduls__container--li">
+                            <summary>
+                             <div class='modul__containter-info'>
+                                <div>
+                                    <p>Sección 1: Introducción</p> <img class='modul__container--img'src='./assets/images/arrow.png'/>
+                                </div> 
+                                <p>5 / 5h 49 min</p>
+                              </div>
+                            </summary>
+                              <ul class='video__group'>
+                                  <li>
+                                    <div>
+                                      <input type="checkbox">
+                                      <p>1. Sección 2: JSX y React.DOM</p>
+                                    </div>
+                                    <div>
+                                      <img src='./assets//images/play.svg'/> <p>10 min</p>
+                                    </div>
+                                    <img src='./assets/images/line.svg'>
+                                </li>
+                                <li>
+                                    <div>
+                                      <input type="checkbox">
+                                      <p>1. Sección 2: JSX y React.DOM</p>
+                                    </div>
+                                    <div>
+                                      <img src='./assets//images/play.svg'/> <p>10 min</p>
+                                    </div>
+                                    <img src='./assets/images/line.svg'>
+                                </li>
+                                <li>
+                                    <div>
+                                      <input type="checkbox">
+                                      <p>1. Sección 2: JSX y React.DOM</p>
+                                    </div>
+                                    <div>
+                                      <img src='./assets//images/play.svg'/> <p>10 min</p>
+                                    </div>
+                                    <img src='./assets/images/line.svg'>
+                                </li>
+                              </ul>
+                            </details>
+          
+          </div>
+      </div>
+    </main>
+    <script src="assets/javascript/cursos.js"></script>
+    <script src="assets/javascript/rating.js"></script>
+  </body>
+</html>
