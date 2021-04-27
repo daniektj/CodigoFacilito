@@ -284,13 +284,14 @@ header {
 
   .cursos__description--card {
     display: flex;
-    height: 86%;
+    height: 300px;
     width: 97%;
     border-radius: 10px;
     padding: 5px;
     /* margin: 10px; */
     box-sizing: content-box;
     background: var(--card-bg-dark);
+    border: 2px purple dashed;
   }
   .infoDescriptionCard {
     height: 70%;
@@ -346,6 +347,7 @@ header {
     align-items: center;
     position: relative;
     margin-top: -20px;
+    /* z-index: 4; */
 }
 
 .rating__title{
