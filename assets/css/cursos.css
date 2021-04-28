@@ -196,7 +196,7 @@ header {
   main {
     height: calc(100vh - 60px);
     display: flex;
-    border: 2px orange dashed;
+    /* border: 2px orange dashed; */
   }
   .header__container {
     max-width: 100%;
@@ -250,7 +250,7 @@ header {
     /* height: 100%; */
     flex-grow: 1;
     min-width: 400px;
-    border: 2px rgb(0, 255, 42) dashed;
+    /* border: 2px rgb(0, 255, 42) dashed; */
     /* aspect-ratio: 16 / 9; */
   }
 
@@ -265,7 +265,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px red solid;
+    /* border: 1px red solid; */
   }
 
   .videoDescription {
@@ -286,7 +286,7 @@ header {
     /* margin: 10px; */
     /* box-sizing: content-box; */
     background: var(--card-bg-dark);
-    border: 2px purple dashed;
+    /* border: 2px purple dashed; */
   }
   .infoDescriptionCard {
     height: 70%;
@@ -324,7 +324,7 @@ header {
     margin: 10px;
     border-radius: 5px;
     background: var(--text-dark);
-    border: 2px rgb(0, 98, 128) dashed;
+    /* border: 2px rgb(0, 98, 128) dashed; */
     z-index: 999;
   }
 
@@ -478,10 +478,12 @@ header {
     display: flex;
 
     flex-direction: column;
+    /* align-items: center; */
+    padding-left: 12.5px;
     overflow: auto;
-    /*  position: absolute ;
-			right: 0px ;
-			top: 0px ; */
+
+    /* border: 2px red dashed; */
+
   }
 
   .cursos__Modulos-hide {
@@ -495,18 +497,23 @@ header {
   }
   .moduls__container--li {
     outline: none;
+    display: flex;
+    justify-content: center;
+    /* border: 1px rgb(255, 217, 0) solid; */
   }
   .modul__containter-info {
     background: var(--card-bg-dark);
-    width: 93%;
-    min-width: 287px;
+    width: 285px;
     padding: 10px;
     color: var(--text-gray);
     z-index: 1;
     box-sizing: border-box;
     height: 60px;
-    margin: 0 0 10px 0;
+    /* margin: 0 0 10px 0; */
+    margin-bottom: 10px;
     border-radius: 10px;
+
+    /* border: 1px red dashed; */
   }
 
   .modul__containter-info div {
@@ -517,20 +524,43 @@ header {
     position: absolute;
     z-index: 1;
     right: 35px;
+    /* border: 1px pink solid; */
   }
-  .video__group {
-    position: relative;
-    top: -20px;
-    width: 90%;
-    left: 13px;
-    list-style: none;
 
-    color: var(--text-gray);
-    min-width: 287px;
-    border-radius: 10px;
-    padding: 15px;
-    box-sizing: border-box;
+
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    outline: none;
+    /* border: 1px pink solid; */
+  }
+
+  details{
+    width: 285px;
+    /* width: calc(100% - 15px); */
+    /* border: 1px rgb(1, 185, 185) solid; */
+  }
+
+
+
+  .video__group {
+    width: 285px;
+    min-width: 285px;
     background: var(--bg-color);
+    color: var(--text-gray);
+    list-style: none;
+    
+    margin-top: -25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* border: 1px greenyellow solid; */
   }
 
   .video__group li {
@@ -576,15 +606,16 @@ header {
     display: inline-block;
     width: 15px;
     height: 15px;
-    margin-right: 0.5rem;
+    /* margin-right: 0.5rem; */
     background-position: center;
     background-size: cover;
+    /* border: 1px greenyellow solid */;
   }
 
   .custom-radio-checkbox__text {
     max-width: 90%;
     /* word-wrap: break-word */
-    border: 1px purple dashed;
+    /* border: 2px purple dashed; */
   }
 
   .custom-radio-checkbox__text p {
@@ -598,7 +629,7 @@ header {
     background-image: url("../images/check.svg");
   }
   /* -----------checkbox---------*/
-  summary::-webkit-details-marker {
+  /* summary::-webkit-details-marker {
     display: none;
   }
   summary {
@@ -607,5 +638,5 @@ header {
     z-index: 1;
     justify-content: center;
     outline: none;
-  }
+  } */
 }
