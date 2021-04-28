@@ -30,11 +30,24 @@ const btnComentario = document.querySelector("#btnComentarios")
 const cursoComentarios = document.querySelector("#cursoComentarios")
 const cursoModulos = document.querySelector("#cursoModulos")
 
+btnComentario.style.setProperty('color', `white`);
+btnComentario.style.setProperty('text-decoration', `none`);
+
 const handleModulo = () => {
+  btnModulo.style.setProperty('color', `var(--green)`);
+  btnModulo.style.setProperty('text-decoration', `underline`);
+  btnComentario.style.setProperty('color', `white`)
+  btnComentario.style.setProperty('text-decoration', `none`);
+
   cursoModulos.classList.toggle("cursos__comentarios-hide", false)
   cursoComentarios.classList.toggle("cursos__comentarios-hide", true)
 }
 const handleComentario = () => {
+  btnModulo.style.setProperty('color', `white`);
+  btnModulo.style.setProperty('text-decoration', `none`);
+  btnComentario.style.setProperty('color', `var(--green)`);
+  btnComentario.style.setProperty('text-decoration', `underline`);
+
   cursoModulos.classList.toggle("cursos__comentarios-hide", true)
   cursoComentarios.classList.toggle("cursos__comentarios-hide", false)
 }
