@@ -427,7 +427,7 @@ progress::-moz-progress-bar {
 }
 
 .section-modules {
-  height: 100vh;
+  height: calc(100vh - 60px);
   display: flex;
 
   flex-direction: column;
