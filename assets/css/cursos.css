@@ -20,15 +20,15 @@
 
 /* ---------- SCROLLBAR ---------- */
 
-.moduls__container::-webkit-scrollbar {
+.section-modules::-webkit-scrollbar {
   width: 14px; /* width of the entire scrollbar */
 }
 
-.moduls__container::-webkit-scrollbar-track {
+.section-modules::-webkit-scrollbar-track {
   background: var(--card-bg-dark); /* color of the tracking area */
 }
 
-.moduls__container::-webkit-scrollbar-thumb {
+.section-modules::-webkit-scrollbar-thumb {
   background-color: var(--header-color); /* color of the scroll thumb */
   border-radius: 10px; /* roundness of the scroll thumb */
   border: 3px solid var(--card-bg-dark); /* creates padding around scroll thumb */
@@ -97,8 +97,9 @@ header {
 /* -------- DESKTOP DESIGN -------- */
 
 main {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 67px);
   display: flex;
+  box-sizing: border-box;
   /* border: 2px orange dashed; */
 }
 .header__container {
@@ -121,7 +122,9 @@ main {
 .header__burgerNav {
   display: none;
 }
-.cursos__video--container {
+
+/* -------- MAIN -------- */
+.main__container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -136,20 +139,20 @@ main {
   display: none;
   transition: 0.5s;
 }
-.button__show {
+.button-sidebar--show {
   position: absolute;
   right: 0;
   cursor: pointer;
 }
 
-.img__hide {
+.button-sidebar--hide {
   position: absolute;
   left: -32px;
   cursor: pointer;
   z-index: 3;
 }
 
-.curso__video {
+.video {
   /* height: 100%; */
   flex-grow: 1;
   min-width: 400px;
@@ -157,17 +160,14 @@ main {
   /* aspect-ratio: 16 / 9; */
 }
 
-/*  .curso__video iframe{
-  width: 100%;
-  aspect-ratio: 16 / 9;
-} */
-
-.curso__video--description {
+.section-description {
   /* height: 540px; */
   /* padding: 10px 0; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
   /* border: 1px red solid; */
 }
 
@@ -176,38 +176,44 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-.cursos__description--card {
+.section-description__container {
   width: 100%;
   height: 300px;
-  margin: 10px;
-  border-radius: 10px;
+  background: var(--card-bg-dark);
   padding: 5px;
+  border-radius: 10px;
+  
   display: flex;
   justify-content: space-between;
+  /* border: 2px purple dashed; */
   /* margin: 10px; */
   /* box-sizing: content-box; */
-  background: var(--card-bg-dark);
-  /* border: 2px purple dashed; */
 }
 .infoDescriptionCard {
   height: 70%;
 }
-.card__video--description {
+
+/* -------- VIDEO DATA -------- */
+.video-data{
   padding: 40px;
+  /* border: 1px yellow dashed; */
 }
 .infoDescriptionContainer {
   padding: 10px 40px;
+  /* border: 1px red solid; */
 }
-.video__description--header {
+.video-data__title-container {
   display: flex;
   align-items: center;
+  /* border: 1px green solid; */
 }
-.video__description--header h3 {
+.video-data__title-container h3 {
   margin-left: 5px;
 }
-.video__description--info {
+.video-data__description {
   margin-top: 10px;
   width: 93%;
   color: var(--text-gray);
@@ -216,7 +222,7 @@ main {
   width: 100%;
 }
 
-.video__recursos {
+.resources-rating {
   min-width: 240px;
   /* max-width: 340px; */
   display: flex;
@@ -234,7 +240,7 @@ main {
 /* ----------- RATING ----------- */
 /* ----------- RATING ----------- */
 
-.container {
+.rating__container {
   width: 185px;
   height: 36px;
   background: #15171c;
@@ -253,7 +259,7 @@ main {
   z-index: -2;
 }
 
-.cody {
+.rating__codyImg {
   position: absolute;
   top: -25px;
   right: 0px;
@@ -270,13 +276,13 @@ main {
   display: none;
 }
 
-.rating-count {
+.rating__stars {
   display: flex;
   background: #15171c;
   border-radius: 5px;
 }
 
-.rating-count input {
+.rating__stars input {
   position: absolute;
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -287,7 +293,7 @@ main {
   border: 0;
 }
 
-.rating-count input + label {
+.rating__stars input + label {
   font-size: 0;
   display: block;
   width: 22px;
@@ -296,14 +302,14 @@ main {
   background: url(../images/star-green.svg) no-repeat center / contain;
 }
 
-.rating-count label:hover ~ label,
-.rating-count:not(:hover) input:checked + label ~ label,
-.rating-count:not(:hover) input:invalid + label {
+.rating__stars label:hover ~ label,
+.rating__stars:not(:hover) input:checked + label ~ label,
+.rating__stars:not(:hover) input:invalid + label {
   background: url(../images/star-empty.svg) no-repeat center / contain;
 }
 
-.rating-count input + label:hover,
-.rating-count:not(:hover) input:focus + label {
+.rating__stars input + label:hover,
+.rating__stars:not(:hover) input:focus + label {
   background-image: url(../images/star-green.svg);
 }
 
@@ -368,7 +374,7 @@ progress::-moz-progress-bar {
   display: none;
 }
 
-.video__recursos button {
+.resources-rating button {
   height: 50px;
   width: 80%;
   border: none;
@@ -378,14 +384,14 @@ progress::-moz-progress-bar {
   background: var(--green);
 }
 
-.video__recurso-info {
+.progress-bar {
   width: calc(80% - 6px);
   display: flex;
   flex-direction: column;
   align-items: center;
   /*  border: 1px red solid; */
 }
-.video__recurso-info h4 {
+.progress-bar h4 {
   color: var(--text-gray);
   margin-bottom: 5px;
   font-size: 14px;
@@ -420,7 +426,7 @@ progress::-moz-progress-bar {
   text-decoration: underline;
 }
 
-.moduls__container {
+.section-modules {
   height: 100vh;
   display: flex;
 
@@ -442,13 +448,13 @@ progress::-moz-progress-bar {
 .cursos__comentarios {
   display: block;
 }
-.moduls__container--li {
+.section-modules__container {
   outline: none;
   display: flex;
   justify-content: center;
   /* border: 1px rgb(255, 217, 0) solid; */
 }
-.modul__containter-info {
+.section-modules__section-container {
   background: var(--card-bg-dark);
   width: 285px;
   padding: 10px;
@@ -464,17 +470,17 @@ progress::-moz-progress-bar {
   /* border: 1px red dashed; */
 }
 
-.modul__containter-info div {
+.section-modules__section-container div {
   display: flex;
   justify-content: space-between;
   /* border: 1px red dashed; */
 }
 
-/* .modul__containter-info div > p{
+/* .section-modules__section-container div > p{
   border: 1px red dashed;
 } */
 
-.modul__container--img {
+.section-modules__section-arrowDown {
   position: absolute;
   z-index: 1;
   right: 10px;
@@ -503,7 +509,7 @@ details{
 
 
 
-.video__group {
+.modules-list {
   width: 285px;
   min-width: 285px;
   background: var(--bg-color);
@@ -518,14 +524,14 @@ details{
   /*  border: 1px greenyellow solid; */
 }
 
-.video__group li {
+.modules-list li {
   display: flex;
   flex-direction: column;
   height: 60px;
   justify-content: space-evenly;
 }
 
-.video__group > li :nth-child(1) p {
+.modules-list > li :nth-child(1) p {
   position: relative;
   top: 9px;
   height: 40px;
@@ -533,13 +539,13 @@ details{
   font-size: 0.9rem;
 }
 
-.video__group > li :nth-child(2) {
+.modules-list > li :nth-child(2) {
   display: flex;
   justify-content: flex-end;
   font-size: 0.8rem;
 }
 /* -----------checkbox---------*/
-.custom-radio-checkbox {
+.modules-list__container {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
@@ -547,17 +553,17 @@ details{
 }
 
 /* Modificador para dar la imagen de checkbox */
-.custom-radio-checkbox__show--checkbox {
+.modules-list__checkbox-img-uncheck {
   background-image: url("../images/uncheck.svg");
 }
 
 /* Oculta input original */
-.custom-radio-checkbox > .custom-radio-checkbox__input {
+.modules-list__container > .modules-list__checkbox {
   display: none;
 }
 
 /* Radio personalizado usando <span> */
-.custom-radio-checkbox > .custom-radio-checkbox__show {
+.modules-list__container > .modules-list__checkbox-img {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -567,20 +573,20 @@ details{
   /* border: 1px greenyellow solid */;
 }
 
-.custom-radio-checkbox__text {
+.modules-list__text {
   max-width: 90%;
   /* word-wrap: break-word */
   /* border: 2px purple dashed; */
 }
 
-.custom-radio-checkbox__text p {
+.modules-list__text p {
   word-wrap: break-word;
 }
 
 /* Cambia el checkbox personalizado cuando es pulsado */
-.custom-radio-checkbox
-  > .custom-radio-checkbox__input:checked
-  + .custom-radio-checkbox__show--checkbox {
+.modules-list__container
+  > .modules-list__checkbox:checked
+  + .modules-list__checkbox-img-uncheck {
   background-image: url("../images/check.svg");
 }
 /* -----------checkbox---------*/
@@ -644,7 +650,7 @@ details{
   border: 1px rgb(1, 185, 185) solid;
 }
 
-.video__group {
+.modules-list {
   width: 90%;
   min-width: 90%;
   background: var(--bg-color);
@@ -659,11 +665,11 @@ details{
   /*  border: 1px greenyellow solid; */
 }
 
-.moduls__container{
+.section-modules{
   overflow: hidden;
 }
 
-.modul__containter-info {
+.section-modules__section-container {
   width: 98%;
   border: 1px red dashed;
 }
