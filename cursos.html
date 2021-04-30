@@ -60,7 +60,23 @@
             </div>
     
             <div class="resources-rating" id='recursos'>
-              <button>Recursos</button>
+              <details class="resources-rating__details">
+                <a class="resources-rating__details-p" href="https://github.com/daniektj/CodigoFacilito"> 
+                  <br/>codigofacilito-assets.zip <br/><br/>
+                  landingCode.zip
+                </a>
+             
+                <summary class="resources-rating__summary">
+                  
+                    <div class='resources-rating__button'>
+                        <img src='./assets/images/docs.svg'>
+                      <span>Recursos</span>
+                      <img src='./assets/images/arrow-down-black.svg'>
+                    </div>
+                  
+
+                </summary>
+              </details>
     
               <span class="rating__title">Califica este curso</span>
               <div class="rating__container" id='container'>
@@ -94,9 +110,9 @@
       </div>
     
     
-      <img src='./assets/images/button_hide.svg' class='button-sidebar--show' id="buttonShow" />
+      <img src='./assets/images/button_hide.svg' class='button-sidebar--show'  onclick="handleArrow2()" id="buttonShow" />
       <div class="cursos__contenido-container " id='cursoContenido'>
-        <img class='button-sidebar--hide' src='./assets/images/button_hide.svg' id="buttonHide" />
+        <img class='button-sidebar--hide' src='./assets/images/button_hide.svg' onclick="handleArrow1()"  id="buttonHide" />
     
         <div class='sidebar__menu'>
           <button id='btnModulo' onfocus="handleModulo()">Modulos</button>
@@ -1211,12 +1227,81 @@
             </ul>
           </details>
         </div>
+
+                <!-- -------- COMENTARIOS -------- -->
     
-        <div class="cursos__comentarios" id='cursoComentarios'>
-          > COMENTARIOS <
+        <div class="section-comments__container" id='cursoComentarios'>
+
+           <!-- -------- COMENTARIO 1 -------- -->
+        <div class='section-comments__section-container'>
+          <div class="section-comment__header">
+            <div class="section-comment__header-user">
+              <img src='./assets/images/Frandeveloper.jpg' alt='imagen de usuario'>
+              <h5>Frandeveloper</h5>
+            </div> 
+            <small class="section-comment__header-">26/04/2021</small>       
+          </div>
+          <p class="section-comment__text">Me gusto mucho el curso de estrategias
+            de marketing para redes sociales.</p>
+            <small class="section-comment__footer">Responder</small>
         </div>
-    
+        <!-- -------- COMENTARIO 2 -------- -->
+        <div class='section-comments__section-container'>
+          <div class="section-comment__header">
+            <div class="section-comment__header-user">
+              <img src='./assets/images/Alberth.jpg' alt='imagen de usuario'>
+              <h5>Alberth</h5>
+            </div> 
+            <small class="section-comment__header-">05/03/2021</small>       
+          </div>
+          <p class="section-comment__text">Der strategiekurs hat mir gefallen
+              narketing für soziale netzwerke.</p>
+            <small class="section-comment__footer">Responder</small>
         </div>
+       
+        <!-- -------- COMENTARIO 3 -------- -->
+        <div class='section-comments__section-container'>
+          <div class="section-comment__header">
+            <div class="section-comment__header-user">
+              <img src='./assets/images/Yulianny.jpg' alt='imagen de usuario'>
+              <h5>Yulianny</h5>
+            </div> 
+            <small class="section-comment__header-">20/04/2021</small>       
+          </div>
+          <p class="section-comment__text">Me gusto mucho el curso de estrategias
+            de marketing para redes sociales.</p>
+            <small class="section-comment__footer">Responder</small>
+        </div>
+       
+        <!-- -------- COMENTARIO 4 -------- -->
+        <div class='section-comments__section-container'>
+          <div class="section-comment__header">
+            <div class="section-comment__header-user">
+              <img src='./assets/images/IDarwin.jpg' alt='imagen de usuario'>
+              <h5>IDarwin</h5>
+            </div> 
+            <small class="section-comment__header-">15/03/2021</small>       
+          </div>
+          <p class="section-comment__text">Me gusto mucho el curso de estrategias
+            de marketing para redes sociales.</p>
+            <small class="section-comment__footer">Responder</small>
+        </div>
+       
+        <!-- -------- COMENTARIO 5 -------- -->
+        <div class='section-comments__section-container'>
+          <div class="section-comment__header">
+            <div class="section-comment__header-user">
+              <img src='./assets/images/Quiarom.jpg' alt='imagen de usuario'>
+              <h5>Quairom</h5>
+            </div> 
+            <small class="section-comment__header-">27/02/2021</small>       
+          </div>
+          <p class="section-comment__text">Me gusto mucho el curso de estrategias
+            de marketing para redes sociales.</p>
+            <small class="section-comment__footer">Responder</small>
+           </div>
+        </div>
+      </div>
     </main>
 
     <script src="assets/javascript/cursos.js"></script>
