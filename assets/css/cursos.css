@@ -429,7 +429,6 @@ progress::-moz-progress-bar {
 .section-modules {
   height: calc(100vh - 120px);
   display: flex;
-
   flex-direction: column;
   /* align-items: center; */
   padding-left: 12.5px;
@@ -767,6 +766,7 @@ summary {
   }
 }
 
+
 @media (max-width: 600px) {
 
   main{
@@ -813,3 +813,4 @@ summary {
   }
 
 }
+
