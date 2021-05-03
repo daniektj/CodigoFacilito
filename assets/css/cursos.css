@@ -481,10 +481,14 @@ progress::-moz-progress-bar {
   /* border: 1px pink solid; */
 }
 
-summary{
-  /* display: none; */
-  list-style-type: none;
+summary::-webkit-details-marker {
+  display: none;
 }
+
+/*   summary{
+    list-style-type: none;
+  } */
+
 summary {
   display: flex;
   position: relative;
@@ -725,15 +729,11 @@ summary {
     height: calc(60vh - 160px);
     display: flex;
     padding: 10px 13.5px 0 10px;
-    overflow: hidden;
+    overflow-y: auto;
     box-sizing: border-box;
     /* border: 1px orange dashed; */
   }
 
-  .section-modules:hover{
-    overflow: auto;
-    padding: 10px 0 0 10px;
-  }
 
   .section-modules__section-container {
     width: 100%;
@@ -752,13 +752,10 @@ summary {
     padding: 12px;
     padding-right: 15.5px;
     height: calc(60vh - 240px);
+    overflow-y: auto;
     /* border: 1px deeppink solid; */
   }
 
-  .section-comments__container:hover{
-    padding-right: 2px;
-    overflow: auto;
-  }
 
   .section-comments__section-container{
     width: calc(100% - 0px);
