@@ -661,7 +661,7 @@ summary {
   main {
     flex-direction: column;
     overflow: hidden;
-    overflow-y: auto;
+    /* overflow-y: auto; */
   }
 
   .video {
@@ -753,11 +753,11 @@ summary {
 
   .section-comments__container{
     flex-grow: 1;
-    min-height: 100%;
+    /* min-height: 100%; */
     padding: 12px;
     padding-right: 15.5px;
     height: calc(60vh - 240px);
-    overflow-y: auto;
+    overflow: auto;
     /* border: 1px deeppink solid; */
   }
 
@@ -769,6 +769,21 @@ summary {
 
   .off{
     display: none;
+  }
+}
+
+@media (min-width: 700px) and (orientation: landscape){
+  main{
+    height: 650px;
+    overflow-y: auto;
+    /* border: 4px red dashed; */
+  }
+
+  .section-comments__container{
+    min-height: 415px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    /* border: 4px deeppink solid; */
   }
 }
 
