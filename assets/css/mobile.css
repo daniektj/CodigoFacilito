@@ -35,6 +35,11 @@ header{
     padding: 0 2rem;
 }
 
+a{
+  color: var(--text-white);
+  text-decoration: none
+}
+
 /* -------- HEADER -------- */
 
 .header__container{
