@@ -217,6 +217,12 @@ main {
   align-items: center;
   /* border: 1px green solid; */
 }
+
+.video-data___image{
+  width: 32px;
+  height: auto;
+}
+
 .video-data__title-container h3 { margin-left: 5px;}
 .video-data__description {
   margin-top: 10px;
