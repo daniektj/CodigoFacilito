@@ -717,7 +717,7 @@ summary {
 
   .section-modules {
     width: 35%;
-    min-width: 250px;
+    min-width: 265px;
     min-height: calc(60vh - 215px);
     height: calc(60vh - 215px);
 
@@ -776,19 +776,6 @@ summary {
     display: none;
   }
 }
-
-/* @media (min-width: 700px) and (orientation: landscape){
-  main{
-    height: 650px;
-    overflow-y: auto;
-  }
-
-  .section-comments__container{
-    min-height: 415px;
-    overflow-y: auto;
-    box-sizing: border-box;
-  }
-} */
 
 @media (max-width: 600px) {
 
