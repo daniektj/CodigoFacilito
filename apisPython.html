@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>APIs con Python usando Fast API</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png"/>
+    <link rel="stylesheet" href="assets/css/cursos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__leftContainer">
+          <a href="index.html">
+            <img class="header__logo" src="assets/images/codigofacilito-logo.svg" alt="logo" />
+          </a>
+          <img
+            class="header__premium"
+            src="assets/images/premium-icon.svg"
+            alt="logo de suscriptor premium"
+          />
+        </div>
+        <div class="header__rightContainer">
+          <img
+            class="header__profileImage"
+            src="./assets/images/profile-mariw.jpg"
+            alt="Imagen del perfil del usuario"
+          />
+          <a class="header__profileName" href="#">Mariwrios</a>
+          <figure class="header__burgerNav"></figure>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__container">
+    
+        <!-- -------- VIDEO -------- -->
+        <div class="video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dAQENEPAqsc" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+    
+        <!-- -------- TITULO Y DESCRIPCION DEL VIDEO -------- -->
+        <div class="section-description" id='videoDescription'>
+          <div class="section-description__container" id='infoDescriptionCard'>
+    
+            <div class="video-data" id='infoDescriptionContainer'>
+              <div class="video-data__title-container">
+                <img class="video-data___image" src="assets/images/tech-python.svg" />
+                <h3 class="video-data__title">APIs con Python usando Fast API</h3>
+              </div>
+    
+              <p class="video-data__description" id='infoDescriptionParrafo'>
+                Un desarrollador backend es multidisciplinario, sabe sobre Http, Bases de Datos, Administración de
+                servidores, herramientas, ORM's, frameworks web,...
+              </p>
+            </div>
+    
+            <div class="resources-rating" id='recursos'>
+              <details class="resources-rating__details">
+                <a class="resources-rating__details-p" href="https://github.com/daniektj/CodigoFacilito"> 
+                  <br/>codigofacilito-assets.zip <br/><br/>
+                  landingCode.zip
+                </a>
+             
+                <summary class="resources-rating__summary">
+                  
+                    <div class='resources-rating__button'>
+                        <img src='./assets/images/docs.svg'>
+                      <span>Recursos</span>
+                      <img src='./assets/images/arrow-down-black.svg'>
+                    </div>
+                  
+
+                </summary>
+              </details>
+    
+              <span class="rating__title">Califica este curso</span>
+              <div class="rating__container" id='container'>
+                <div class="rating__stars">
+                  <input id="c1" type="radio" name="rating" value="1" required>
+                  <label for="c1" id="sad1">1</label>
+                  <input id="c2" type="radio" name="rating" value="2">
+                  <label for="c2" id="sad2">2</label>
+                  <input id="c3" type="radio" name="rating" value="3">
+                  <label for="c3" id="neutral3">3</label>
+                  <input id="c4" type="radio" name="rating" value="4">
+                  <label for="c4" id="happy4">4</label>
+                  <input id="c5" type="radio" name="rating" value="5">
+                  <label for="c5" id="happy5">5</label>
+                </div>
+                <img class="rating__codyImg" id="happy" src="assets/images/cody-happy.svg" alt="">
+                <img class="rating__codyImg" id="pokerFace" src="assets/images/cody-pokerface.svg" alt="">
+                <img class="rating__codyImg" id="sad" src="assets/images/cody-sad.svg" alt="">
+              </div>
+    
+    
+              <div class="progress-bar">
+                <h4>Tu progreso - 38 de 107</h4>
+                <progress id="progress" value="38" max="107"></progress>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    
+      <img src='./assets/images/button_hide.svg' class='button-sidebar--show off'  onclick="handleArrow2()" id="buttonShow" />
+      <div class="cursos__contenido-container " id='cursoContenido'>
+        <img class='button-sidebar--hide off' src='./assets/images/button_hide.svg' onclick="handleArrow1()"  id="buttonHide" />
+    
+        <div class='sidebar__menu'>
+          <button id='btnModulo' onfocus="handleModulo()">Modulos</button>
+          <button id='btnComentarios' onfocus="handleComentario()">Comentarios</button>
+        </div>
+    
+        <div class="section-modules" id='cursoModulos'>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container" open>
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+    
+          <!-- -------- SECTION TITLE -------- -->
+          <details class="section-modules__container">
+            <summary>
+              <div class='section-modules__section-container'>
+                <div>
+                  <p>Sección 1: Introducción</p>
+                  <img class='section-modules__section-arrowDown' src='./assets/images/arrow.png' />
+                </div>
+                <p>5 / 5h 49 min</p>
+              </div>
+            </summary>
+            <ul class='modules-list'>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+    
+              <!-- -------- VIDEO TITLE -------- -->
+              <li>
+                <label class="modules-list__container">
+                  <input class="modules-list__checkbox" type="checkbox" name="genero" value="hombre">
+                  <span class="modules-list__checkbox-img modules-list__checkbox-img-uncheck"></span>
+                  <span class="modules-list__text">
+                    <p>4. Creando nuestra primera aplicación en React</p>
+                  </span>
+                </label>
+                <div>
+                  <img src='./assets//images/play.svg' />
+                  <p>4 min</p>
+                </div>
+                <img src='./assets/images/line.svg'>
+              </li>
+            </ul>
+          </details>
+        </div>
+
+                <!-- -------- COMENTARIOS -------- -->
+    
+        <div class="section-comments__container" id='cursoComentarios'>
+
+          <!-- -------- COMENTARIO 1 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/Frandeveloper.jpg' alt='imagen de usuario'>
+                <h5>Frandeveloper</h5>
+              </div> 
+              <small class="section-comment__header-">04/01/2021</small>       
+            </div>
+            <p class="section-comment__text">Es raro que me vean en streams de tecnología, pero a este no podia faltar.</p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+          <!-- -------- COMENTARIO 2 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/Alberth.jpg' alt='imagen de usuario'>
+                <h5>Alberth</h5>
+              </div> 
+              <small class="section-comment__header-">05/01/2021</small>       
+            </div>
+            <p class="section-comment__text">Der strategiekurs hat mir gefallen
+                narketing für soziale netzwerke.</p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+        
+          <!-- -------- COMENTARIO 3 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/Yulianny.jpg' alt='imagen de usuario'>
+                <h5>Yulianny</h5>
+              </div> 
+              <small class="section-comment__header-">20/01/2021</small>       
+            </div>
+            <p class="section-comment__text">
+              Gran curso, voy crear un Bot beaneador de haters en Raydesite.
+            </p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+        
+          <!-- -------- COMENTARIO 4 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/IDarwin.jpg' alt='imagen de usuario'>
+                <h5>IDarwin</h5>
+              </div> 
+              <small class="section-comment__header-">22/01/2021</small>       
+            </div>
+            <p class="section-comment__text">vientos! me agradaaa habrá organizarnos en estos días😄</p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+        
+          <!-- -------- COMENTARIO 5 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/Quiarom.jpg' alt='imagen de usuario'>
+                <h5>Quairom</h5>
+              </div> 
+              <small class="section-comment__header-">26/02/2021</small>       
+            </div>
+            <p class="section-comment__text">Voy a compartir este curso</p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+          <!-- -------- COMENTARIO 6 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/comment-nathalie.png' alt='imagen de usuario'>
+                <h5>Nathalie RIvas</h5>
+              </div> 
+              <small class="section-comment__header-">28/02/2021</small>       
+            </div>
+            <p class="section-comment__text">Aquí hay demasiado potencial!!⚡</p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+          <!-- -------- COMENTARIO 7 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/comment-vifrac.png' alt='imagen de usuario'>
+                <h5>Vifrac</h5>
+              </div> 
+              <small class="section-comment__header-">28/02/2021</small>       
+            </div>
+            <p class="section-comment__text">No diga eso que me siento damnificado, mi dia inicia a las 6am</p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+          <!-- -------- COMENTARIO 8 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/comment-natsumi.png' alt='imagen de usuario'>
+                <h5>natsumiangel</h5>
+              </div> 
+              <small class="section-comment__header-">28/02/2021</small>       
+            </div>
+            <p class="section-comment__text">ahorita ya se pone reggaeton del viejito🤭</p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+          <!-- -------- COMENTARIO 9 -------- -->
+          <div class='section-comments__section-container'>
+            <div class="section-comment__header">
+              <div class="section-comment__header-user">
+                <img src='./assets/images/comment-lucia.png' alt='imagen de usuario'>
+                <h5>natsumiangel</h5>
+              </div> 
+              <small class="section-comment__header-">29/02/2021</small>       
+            </div>
+            <p class="section-comment__text">Si que vayan diciendo a que hora, nomas no muy tempra.</p>
+              <small class="section-comment__footer">Responder</small>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/javascript/cursos.js"></script>
+    <script src="assets/javascript/rating.js"></script>
+  </body>
+</html>
