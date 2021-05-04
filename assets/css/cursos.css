@@ -777,19 +777,6 @@ summary {
   }
 }
 
-/* @media (min-width: 700px) and (orientation: landscape){
-  main{
-    height: 650px;
-    overflow-y: auto;
-  }
-
-  .section-comments__container{
-    min-height: 415px;
-    overflow-y: auto;
-    box-sizing: border-box;
-  }
-} */
-
 @media (max-width: 600px) {
 
   main{
